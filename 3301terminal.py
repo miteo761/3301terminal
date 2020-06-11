@@ -95,7 +95,7 @@ if __name__ == '__main__':
                     for i in range(1, rev + 1):
                         if number % i == 0:
                             factors_rev.append(i)
-                    print(rev, ":", str(factors_rev))
+                    print(rev, ":", factors_rev)
 
                 elif is_prime(rev) == True:
                     print("+{}+".format(number))
@@ -111,7 +111,7 @@ if __name__ == '__main__':
                 for i in range(1, number + 1):
                     if number % i == 0:
                         factors.append(i)
-                print(number, ":", str(factors))
+                print(number, ":", factors)
     else:
         text = str(user_input)
 
@@ -165,7 +165,7 @@ if __name__ == '__main__':
                   '2731,2741,2749,2753,2767,2777,2789,2791,2797,2801,2803,2819,2833,2837,2843,2851,2857,2861,2879,'
                   '2887,2897,2903,2909,2917,2927,2939,2953,2957,2963,2969,2971,2999,3001,3011,3019,3023,3037,3041,'
                   '3049,3061,3067,3079,3083,3089,3109,3119,3121,3137,3163,3167,3169,3181,3187,3191,3203,3209,3217,'
-                  '3221,3229,3251,3253,3257,,3259,3271,3299,3301')
+                  '3221,3229,3251,3253,3257,3259,3271,3299,3301')
 
         elif text == 'get 3301':
             print('A message for you:')
