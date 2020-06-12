@@ -95,7 +95,7 @@ if __name__ == '__main__':
                 elif number > 10:
                     if is_prime(rev) == False:
                         for i in range(1, rev + 1):
-                            if number % i == 0:
+                            if rev % i == 0:
                                 factors_rev.append(i)
                         print(rev, ":", factors_rev)
 
