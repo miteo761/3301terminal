@@ -79,8 +79,9 @@ def gem_map(x, src, dest):
 
 
 if __name__ == '__main__':
-    try:
-        print("Welcome.")
+    print("Welcome.")
+    ready = True
+    while ready == True:
         user_input = input()
         if user_input.isdigit():
             number = int(user_input)
@@ -207,11 +208,5 @@ if __name__ == '__main__':
                 output = lat_to_num(user_input)
                 print(sum(output[5:]))
 
-    except BaseException:
-        import sys
-        print(sys.exc_info()[0])
-        import traceback
-        print(traceback.format_exc())
-    finally:
-        print("Press Enter to continue.")
-        input()
+            elif text == 'quit':
+                ready = False
