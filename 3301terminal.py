@@ -92,6 +92,7 @@ if __name__ == '__main__':
             if is_prime(number) == True:
                 if number < 10:
                     print("*{}*".format(number))
+                    
                 elif number > 10:
                     if is_prime(rev) == False:
                         for i in range(1, rev + 1):
