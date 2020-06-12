@@ -208,5 +208,5 @@ if __name__ == '__main__':
                 output = lat_to_num(user_input)
                 print(sum(output[5:]))
 
-            elif text == 'quit':
+            elif text == 'quit' or 'goodbye':
                 ready = False
